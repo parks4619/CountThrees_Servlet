@@ -76,6 +76,11 @@
         <plugin>
 	  <groupId>org.mortbay.jetty</groupId>
 	  <artifactId>maven-jetty-plugin</artifactId>
+          <configuration>
+		<httpConnector>
+			<port>9999</port>
+		</httpConnector>
+	  </configuration>
         </plugin>
       </plugins>
     </pluginManagement>
