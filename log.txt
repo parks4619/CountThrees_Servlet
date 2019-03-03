@@ -1,0 +1,66 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------< com.hpcbayarea.cs178:tpark-servlet-countthrees >-----------
+[INFO] Building tpark-servlet-countthrees Maven Webapp 1.0
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] >>> maven-jetty-plugin:6.1.26:run (default-cli) > test-compile @ tpark-servlet-countthrees >>>
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ tpark-servlet-countthrees ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /usr/local/tpark-servlet-countthrees/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ tpark-servlet-countthrees ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ tpark-servlet-countthrees ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /usr/local/tpark-servlet-countthrees/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ tpark-servlet-countthrees ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< maven-jetty-plugin:6.1.26:run (default-cli) < test-compile @ tpark-servlet-countthrees <<<
+[INFO] 
+[INFO] 
+[INFO] --- maven-jetty-plugin:6.1.26:run (default-cli) @ tpark-servlet-countthrees ---
+[INFO] Configuring Jetty for project: tpark-servlet-countthrees Maven Webapp
+[INFO] Webapp source directory = /usr/local/tpark-servlet-countthrees/src/main/webapp
+[INFO] Reload Mechanic: automatic
+[INFO] Classes directory /usr/local/tpark-servlet-countthrees/target/classes does not exist
+[INFO] Logging to org.slf4j.impl.MavenSimpleLogger(org.mortbay.log) via org.mortbay.log.Slf4jLog
+[INFO] Context path = /tpark-servlet-countthrees
+[INFO] Tmp directory =  determined at runtime
+[INFO] Web defaults = org/mortbay/jetty/webapp/webdefault.xml
+[INFO] Web overrides =  none
+[INFO] web.xml file = /usr/local/tpark-servlet-countthrees/src/main/webapp/WEB-INF/web.xml
+[INFO] Webapp directory = /usr/local/tpark-servlet-countthrees/src/main/webapp
+[INFO] Starting jetty 6.1.26 ...
+[INFO] jetty-6.1.26
+[INFO] No Transaction manager found - if your webapp requires one, please configure one.
+[WARNING] failed SelectChannelConnector@0.0.0.0:8080: java.net.BindException: Address already in use
+[WARNING] failed Server@21fff664: java.net.BindException: Address already in use
+[INFO] Jetty server exiting.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.458 s
+[INFO] Finished at: 2019-02-17T22:08:02-08:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.mortbay.jetty:maven-jetty-plugin:6.1.26:run (default-cli) on project tpark-servlet-countthrees: Failure: Address already in use -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[INFO] Shutdown hook executing
+[INFO] Stopped SelectChannelConnector@0.0.0.0:8080
+[WARNING] failed jsp: java.lang.NoClassDefFoundError: org/apache/jasper/runtime/JspApplicationContextImpl
+[WARNING] failed ServletHandler@347b62f5: java.lang.NoClassDefFoundError: org/apache/jasper/runtime/JspApplicationContextImpl
+[WARNING] failed SecurityHandler@3abc8a0a: java.lang.NoClassDefFoundError: org/apache/jasper/runtime/JspApplicationContextImpl
+[WARNING] failed SessionHandler@3e830985: java.lang.NoClassDefFoundError: org/apache/jasper/runtime/JspApplicationContextImpl
+[WARNING] failed org.mortbay.jetty.plugin.Jetty6PluginWebAppContext@6079cf5{/tpark-servlet-countthrees,/usr/local/tpark-servlet-countthrees/src/main/webapp}: java.lang.NoClassDefFoundError: org/apache/jasper/runtime/JspApplicationContextImpl
+[WARNING] failed ContextHandlerCollection@7b818031: java.lang.NoClassDefFoundError: org/apache/jasper/runtime/JspApplicationContextImpl
+[WARNING] failed HandlerCollection@1482297e: java.lang.NoClassDefFoundError: org/apache/jasper/runtime/JspApplicationContextImpl
+[WARNING] failed Server@21fff664: java.lang.NoClassDefFoundError: org/apache/jasper/runtime/JspApplicationContextImpl
